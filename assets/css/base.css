@@ -1,0 +1,130 @@
+/* BASE — design tokens (colors/fonts), reset, and global utility classes (.alert, .tag, .mono). Loaded by every page. */
+
+/* ============================================
+   1. CSS VARIABLES / DESIGN TOKENS
+   ============================================ */
+:root {
+  /* Primary Colors */
+  --navy-950: #10182B;
+  --navy-900: #1B2A4A;
+  --navy-800: #243863;
+  
+  /* Surface Colors */
+  --paper: #F6F4ED;
+  --paper-raised: #FFFFFF;
+  
+  /* Text Colors */
+  --ink: #1B2A4A;
+  --ink-soft: #5B6B8C;
+  --ink-faint: #8E9BB8;
+  
+  /* Accent Colors */
+  --amber: #E8A33D;
+  --amber-deep: #C9821F;
+  --amber-soft: #FBEAD0;
+  --teal: #2F9E8F;
+  --teal-soft: #DCF2EE;
+  --coral: #E2574C;
+  --coral-soft: #FBE2DF;
+  
+  /* Border Colors */
+  --line: #E4E0D3;
+  --line-soft: #EDEAE0;
+  
+  /* Spacing & Radius */
+  --radius: 14px;
+}
+
+/* ============================================
+   2. RESET & BASE STYLES
+   ============================================ */
+* { box-sizing: border-box; }
+
+html, body { 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { 
+  font-family: 'Fraunces', serif; 
+}
+
+.mono { 
+  font-family: 'IBM Plex Mono', monospace; 
+}
+
+a { 
+  color: inherit; 
+}
+
+button { 
+  font-family: inherit; 
+  cursor: pointer; 
+}
+
+input, textarea, select { 
+  font-family: inherit; 
+}
+
+/* ============================================
+   3. UTILITY CLASSES
+   ============================================ */
+.alert {
+  padding: 11px 15px;
+  border-radius: 9px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.alert-error {
+  background: var(--coral-soft);
+  color: var(--coral);
+}
+
+.alert-success {
+  background: var(--teal-soft);
+  color: var(--teal);
+}
+
+.alert-info {
+  background: var(--amber-soft);
+  color: var(--amber-deep);
+}
+
+.tag {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.tag.amber {
+  background: var(--amber-soft);
+  color: var(--amber-deep);
+}
+
+.tag.coral {
+  background: var(--coral-soft);
+  color: var(--coral);
+}
+
+.tag.teal {
+  background: var(--teal-soft);
+  color: var(--teal);
+}
+
+.tag.navy {
+  background: var(--navy-900);
+  color: #fff;
+}
+
+

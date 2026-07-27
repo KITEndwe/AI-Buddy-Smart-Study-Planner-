@@ -1,0 +1,46 @@
+/* NOTES — student/notes/ layout (course filter sidebar + study materials grid). */
+
+/* 6.14 - Notes Layout */
+.notes-layout {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 20px;
+}
+
+.course-filter-list a {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  text-decoration: none;
+}
+
+.note-card {
+  margin-bottom: 14px;
+}
+
+.note-card .n-title {
+  font-weight: 600;
+  font-size: 14.5px;
+  margin-bottom: 4px;
+}
+
+.note-card .n-snip {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.note-meta-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+

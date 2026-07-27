@@ -1,0 +1,31 @@
+/* ============================================
+   MASTER STYLESHEET
+   This file now just pulls in the split-up files below, each covering
+   one area of the site, so you can go straight to the right file
+   instead of scrolling one giant stylesheet.
+
+     base.css        -> colors/fonts/reset, used everywhere
+     layout.css      -> sidebar + page shell, used everywhere
+     auth.css        -> login pages (student/auth/, admin login)
+     components.css  -> cards, buttons, forms, tables, toggles — shared
+                         by admin/, and most of student/ (dashboard,
+                         courses, assignments, exams, planner, buddy,
+                         notifications, profile)
+     groups.css      -> student/groups/ (and the chat look, reused by
+                         student/buddy/)
+     goals.css       -> student/goals/
+     notes.css       -> student/notes/
+     responsive.css  -> small-screen breakpoints, kept last
+
+   Nothing else needs to change — every page still just links to this
+   one style.css as before.
+   ============================================ */
+
+@import url('base.css');
+@import url('layout.css');
+@import url('auth.css');
+@import url('components.css');
+@import url('groups.css');
+@import url('goals.css');
+@import url('notes.css');
+@import url('responsive.css');

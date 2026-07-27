@@ -1,0 +1,59 @@
+/* RESPONSIVE — breakpoints affecting the layout/component rules above, plus the notification badge. Kept last so overrides apply correctly. */
+
+/* ============================================
+   7. RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 1000px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 880px) {
+  .sidebar {
+    position: fixed;
+    z-index: 50;
+  }
+  
+  .main {
+    padding: 24px 18px 60px;
+  }
+  
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .notes-layout {
+    grid-template-columns: 1fr;
+  }
+}
+/* Notification unread badge, shown next to the sidebar Notifications link */
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notif-badge {
+  background: var(--amber, #d4a017);
+  color: #1a1a1a;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  line-height: 1;
+}
+

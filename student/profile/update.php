@@ -7,9 +7,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $last = trim($_POST['last_name'] ?? '');
     $email = trim($_POST['email'] ?? '');
     $year = (int)($_POST['year_of_study'] ?? 1);
+    $semester = (int)($_POST['semester'] ?? 1);
     if ($first && $last && $email) {
-        $stmt = $pdo->prepare("UPDATE students SET first_name=?, last_name=?, email=?, year_of_study=? WHERE id=?");
-        $stmt->execute([$first, $last, $email, $year, $sid]);
+        $stmt = $pdo->prepare("UPDATE students SET first_name=?, last_name=?, email=?, year_of_study=?, semester=? WHERE id=?");
+        $stmt->execute([$first, $last, $email, $year, $semester, $sid]);
         set_flash('success', 'Profile updated.');
     }
 }

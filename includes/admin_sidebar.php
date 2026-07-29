@@ -9,8 +9,8 @@ $adminNav = [
 ?>
 <aside class="sidebar">
   <div class="sidebar-brand">
-    <span class="sundial">☀</span>
-    <div class="name">Smart Buddy<small>Admin console</small></div>
+    <span class="sundial"><img style="border-radius: 15px;" width="35px" src="cavendish-university-zambia.jpg" alt=""></span>
+    <div class="name">Study Planner<small>Admin console</small></div>
   </div>
   <nav class="nav-group">
     <?php foreach ($adminNav as $key => $item): ?>

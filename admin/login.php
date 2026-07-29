@@ -30,11 +30,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="auth-side">
     <div class="brand-mark">
       <span class="sundial"> <img style="border-radius: 20px;" width="100px" src="cavendish-university-zambia.jpg" alt="CUZ"> </span>
-      Smart Buddy · Admin console
+      Smart  Study Planner· Admin Dashboard
     </div>
     <div class="auth-hero">
       <h1>Every student, every programme, one console.</h1>
-      <p>Add students to their programme, manage courses, and keep the academic side of Smart Buddy running smoothly.</p>
+      <p>Add students to their programme, manage courses, and keep the academic side of Smart Study Planner running smoothly.</p>
     </div>
     <div class="auth-quote">
       "Give a student their login, and their whole semester is mapped out for them from day one."

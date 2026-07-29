@@ -11,7 +11,7 @@ include __DIR__ . '/../../includes/header.php';
     <div style="display:flex;align-items:center;gap:16px;margin-bottom:22px;">
       <div class="avatar-circle" style="width:56px;height:56px;font-size:20px;"><?= e(initials($student['first_name'],$student['last_name'])) ?></div>
       <div><div style="font-weight:600;font-size:16px;"><?= e($student['first_name'].' '.$student['last_name']) ?></div>
-      <div style="font-size:12.5px;color:var(--ink-soft);"><?= e($student['programme_name']) ?> · Year <?= e($student['year_of_study']) ?> · <?= e($student['email']) ?></div></div>
+      <div style="font-size:13.5px;color:var(--ink-soft);"><?= e($student['programme_name']) ?> · Year <?= e($student['year_of_study']) ?> · <?= e($student['email']) ?></div></div>
     </div>
     <form method="post" action="<?= BASE_URL ?>/student/profile/update.php">
       <div class="form-row-2">
